@@ -844,29 +844,71 @@ section {
 
 .resume-preview-body { padding: 0; }
 
-.resume-pdf-embed {
-  width: 100%;
-  height: 600px;
-  border: none;
-  display: block;
-  background: #fff;
-}
-.resume-pdf-fallback {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  padding: 3rem 2rem;
-  text-align: center;
-  color: var(--text-muted);
-}
-.resume-pdf-fallback i {
-  font-size: 3rem;
-  color: var(--accent2);
-}
-.resume-pdf-fallback p {
+.resume-html-content {
+  padding: 2rem 2.5rem;
+  color: var(--text);
   font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.resume-block {
+  margin-bottom: 2rem;
+}
+
+.resume-block:last-child {
+  margin-bottom: 0;
+}
+
+.resume-block-title {
+  font-size: 1.1rem;
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--border);
+  font-family: var(--font-code);
+}
+
+.resume-block-title i {
+  margin-right: 0.5rem;
+}
+
+.resume-block p {
+  margin-bottom: 0.5rem;
+  color: var(--text);
+}
+
+.resume-entry {
+  margin-bottom: 1.25rem;
+}
+
+.resume-entry:last-child {
+  margin-bottom: 0;
+}
+
+.resume-entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.4rem;
+}
+
+.resume-entry-date {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.resume-html-content ul {
+  padding-left: 1.25rem;
+  margin-top: 0.3rem;
+}
+
+.resume-html-content li {
+  margin-bottom: 0.35rem;
+  color: var(--text);
+  font-size: 0.9rem;
 }
 
 .resume-download-bar {
@@ -1116,7 +1158,8 @@ footer {
   .skills-categories { grid-template-columns: 1fr; }
 
   .resume-download-bar { flex-direction: column; align-items: stretch; text-align: center; }
-  .resume-pdf-embed { height: 400px; }
+  .resume-html-content { padding: 1.5rem 1rem; }
+  .resume-entry-header { flex-direction: column; }
   .hero-actions { flex-direction: column; align-items: stretch; }
   .hero-actions .btn { justify-content: center; }
 }
