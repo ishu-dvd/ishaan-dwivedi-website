@@ -3,18 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ishaan Dwivedi | Software Engineer</title>
+  <title>Ishaan Dwivedi | Software Engineer II @ Microsoft</title>
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <!-- Font Awesome (deferred) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" /></noscript>
 
-  <!-- Devicons (tech logos) -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
+  <!-- Devicons (deferred) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" /></noscript>
 
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -34,6 +36,7 @@
       <li><a href="#experience">experience</a></li>
       <li><a href="#projects">projects</a></li>
       <li><a href="#education">education</a></li>
+      <li><a href="#hobbies">hobbies</a></li>
       <li><a href="#contact">contact</a></li>
     </ul>
     <a href="#resume" class="nav-resume-btn">resume</a>
@@ -60,7 +63,7 @@
             <span id="typed-text"></span><span class="cursor">|</span>
           </h2>
           <p class="terminal-line"><span class="prompt">$</span> echo $PASSION</p>
-          <p class="hero-passion">Building scalable systems &amp; elegant solutions ✨</p>
+          <p class="hero-passion">Building scalable platforms, AI-driven automations &amp; developer tooling ✨</p>
           <p class="terminal-line"><span class="prompt">$</span> <span class="blinking-cursor">_</span></p>
         </div>
       </div>
@@ -68,8 +71,11 @@
         <a href="#projects" class="btn btn-primary">
           <i class="fas fa-code"></i> View Projects
         </a>
-        <a href="#contact" class="btn btn-outline">
-          <i class="fas fa-envelope"></i> Get in Touch
+        <a href="mailto:imishu98@gmail.com?subject=Hello%20Ishaan!" class="btn btn-outline">
+          <i class="fas fa-envelope"></i> Email Me
+        </a>
+        <a href="assets/resume.pdf" download="Ishaan_Dwivedi_Resume.pdf" class="btn btn-outline">
+          <i class="fas fa-file-pdf"></i> Download Resume
         </a>
       </div>
     </div>
@@ -94,30 +100,32 @@
       <div class="about-grid">
         <div class="about-text">
           <p>
-            Hey there! 👋 I'm <strong>Ishaan Dwivedi</strong>, a passionate Software Engineer
-            who loves turning complex problems into clean, efficient code.
+            Hey there! 👋 I'm <strong>Ishaan Dwivedi</strong>, a Software Engineer II at
+            <strong>Microsoft</strong> with 5+ years of experience building scalable platforms,
+            automation frameworks, and developer tooling.
           </p>
           <p>
-            With a deep interest in <strong>full-stack development</strong>,
-            <strong>cloud architecture</strong>, and <strong>distributed systems</strong>,
-            I thrive at the intersection of creativity and engineering.
+            With deep expertise in <strong>cloud services</strong>,
+            <strong>low-latency systems</strong>, and <strong>AI-driven automation</strong>,
+            I thrive at turning complex problems into elegant solutions while keeping reliability high and downtime low.
           </p>
           <p>
-            When I'm not coding, you'll find me exploring the latest tech trends,
-            contributing to open source, or sharing knowledge with the developer community. 🚀
+            Previously at <strong>JP Morgan Chase</strong>, I worked on ultra-low latency trading platforms
+            and cross-connectivity systems. I'm passionate about Agentic AI, developer productivity, and
+            sharing knowledge with the community. 🚀
           </p>
           <div class="about-facts">
             <div class="fact">
               <span class="fact-icon">📍</span>
-              <span>Based in India</span>
+              <span>Based in Hyderabad, India</span>
             </div>
             <div class="fact">
               <span class="fact-icon">💼</span>
-              <span>Software Engineer</span>
+              <span>Software Engineer II @ Microsoft</span>
             </div>
             <div class="fact">
               <span class="fact-icon">🎓</span>
-              <span>Computer Science Graduate</span>
+              <span>B.Tech from NIT Bhopal (MANIT)</span>
             </div>
             <div class="fact">
               <span class="fact-icon">☕</span>
@@ -135,19 +143,19 @@
             </div>
             <pre class="code-snippet"><span class="json-key">{</span>
   <span class="json-key">"name"</span>: <span class="json-str">"Ishaan Dwivedi"</span>,
-  <span class="json-key">"role"</span>: <span class="json-str">"Software Engineer"</span>,
-  <span class="json-key">"location"</span>: <span class="json-str">"India 🇮🇳"</span>,
+  <span class="json-key">"role"</span>: <span class="json-str">"Software Engineer II"</span>,
+  <span class="json-key">"company"</span>: <span class="json-str">"Microsoft"</span>,
+  <span class="json-key">"location"</span>: <span class="json-str">"Hyderabad, India 🇮🇳"</span>,
   <span class="json-key">"languages"</span>: [
+    <span class="json-str">"C#"</span>,
+    <span class="json-str">"C++"</span>,
     <span class="json-str">"Python"</span>,
-    <span class="json-str">"JavaScript"</span>,
-    <span class="json-str">"Java"</span>,
-    <span class="json-str">"Go"</span>
+    <span class="json-str">"X++"</span>
   ],
-  <span class="json-key">"openToWork"</span>: <span class="json-bool">true</span>,
-  <span class="json-key">"hobbies"</span>: [
-    <span class="json-str">"Open Source"</span>,
-    <span class="json-str">"Cloud Computing"</span>,
-    <span class="json-str">"Gaming"</span>
+  <span class="json-key">"passions"</span>: [
+    <span class="json-str">"Agentic AI"</span>,
+    <span class="json-str">"Cloud Services"</span>,
+    <span class="json-str">"Developer Tooling"</span>
   ]
 <span class="json-key">}</span></pre>
           </div>
@@ -169,132 +177,82 @@
           <h3 class="skill-cat-title"><i class="fas fa-code"></i> Languages</h3>
           <div class="skill-grid">
             <div class="skill-chip">
+              <i class="devicon-c-plain colored"></i>
+              <span>C</span>
+            </div>
+            <div class="skill-chip">
+              <i class="devicon-cplusplus-plain colored"></i>
+              <span>C++</span>
+            </div>
+            <div class="skill-chip">
+              <i class="devicon-csharp-plain colored"></i>
+              <span>C#</span>
+            </div>
+            <div class="skill-chip">
               <i class="devicon-python-plain colored"></i>
               <span>Python</span>
-            </div>
-            <div class="skill-chip">
-              <i class="devicon-javascript-plain colored"></i>
-              <span>JavaScript</span>
-            </div>
-            <div class="skill-chip">
-              <i class="devicon-typescript-plain colored"></i>
-              <span>TypeScript</span>
             </div>
             <div class="skill-chip">
               <i class="devicon-java-plain colored"></i>
               <span>Java</span>
             </div>
             <div class="skill-chip">
-              <i class="devicon-go-plain colored"></i>
-              <span>Go</span>
-            </div>
-            <div class="skill-chip">
-              <i class="devicon-cplusplus-plain colored"></i>
-              <span>C++</span>
+              <i class="fas fa-code"></i>
+              <span>X++</span>
             </div>
           </div>
         </div>
 
-        <!-- Frontend -->
+        <!-- Frameworks & Platforms -->
         <div class="skill-category">
-          <h3 class="skill-cat-title"><i class="fas fa-desktop"></i> Frontend</h3>
+          <h3 class="skill-cat-title"><i class="fas fa-desktop"></i> Frameworks &amp; Platforms</h3>
           <div class="skill-grid">
             <div class="skill-chip">
-              <i class="devicon-react-original colored"></i>
-              <span>React</span>
+              <i class="devicon-dot-net-plain colored"></i>
+              <span>.NET</span>
             </div>
             <div class="skill-chip">
-              <i class="devicon-nextjs-original"></i>
-              <span>Next.js</span>
+              <i class="fas fa-robot"></i>
+              <span>Agentic AI</span>
             </div>
             <div class="skill-chip">
-              <i class="devicon-html5-plain colored"></i>
-              <span>HTML5</span>
+              <i class="fas fa-plug"></i>
+              <span>MCP</span>
             </div>
             <div class="skill-chip">
-              <i class="devicon-css3-plain colored"></i>
-              <span>CSS3</span>
+              <i class="fas fa-tools"></i>
+              <span>Claude CLI Plugins</span>
             </div>
             <div class="skill-chip">
-              <i class="devicon-tailwindcss-plain colored"></i>
-              <span>Tailwind</span>
+              <i class="devicon-vscode-plain colored"></i>
+              <span>VS Code Extensions</span>
             </div>
           </div>
         </div>
 
-        <!-- Backend -->
+        <!-- Backend & DevOps -->
         <div class="skill-category">
-          <h3 class="skill-cat-title"><i class="fas fa-server"></i> Backend</h3>
+          <h3 class="skill-cat-title"><i class="fas fa-server"></i> Backend &amp; DevOps</h3>
           <div class="skill-grid">
             <div class="skill-chip">
-              <i class="devicon-nodejs-plain colored"></i>
-              <span>Node.js</span>
+              <i class="devicon-azure-plain colored"></i>
+              <span>Azure</span>
             </div>
             <div class="skill-chip">
-              <i class="devicon-fastapi-plain colored"></i>
-              <span>FastAPI</span>
+              <i class="fas fa-cogs"></i>
+              <span>Power Platform</span>
             </div>
             <div class="skill-chip">
-              <i class="devicon-django-plain colored"></i>
-              <span>Django</span>
+              <i class="fas fa-chart-line"></i>
+              <span>Telemetry</span>
             </div>
             <div class="skill-chip">
-              <i class="devicon-spring-plain colored"></i>
-              <span>Spring</span>
+              <i class="fas fa-bug"></i>
+              <span>WinDbg</span>
             </div>
             <div class="skill-chip">
-              <i class="devicon-graphql-plain colored"></i>
-              <span>GraphQL</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Cloud & DevOps -->
-        <div class="skill-category">
-          <h3 class="skill-cat-title"><i class="fas fa-cloud"></i> Cloud &amp; DevOps</h3>
-          <div class="skill-grid">
-            <div class="skill-chip">
-              <i class="devicon-amazonwebservices-original colored"></i>
-              <span>AWS</span>
-            </div>
-            <div class="skill-chip">
-              <i class="devicon-docker-plain colored"></i>
-              <span>Docker</span>
-            </div>
-            <div class="skill-chip">
-              <i class="devicon-kubernetes-plain colored"></i>
-              <span>Kubernetes</span>
-            </div>
-            <div class="skill-chip">
-              <i class="devicon-github-original"></i>
-              <span>GitHub Actions</span>
-            </div>
-            <div class="skill-chip">
-              <i class="devicon-terraform-plain colored"></i>
-              <span>Terraform</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Databases -->
-        <div class="skill-category">
-          <h3 class="skill-cat-title"><i class="fas fa-database"></i> Databases</h3>
-          <div class="skill-grid">
-            <div class="skill-chip">
-              <i class="devicon-postgresql-plain colored"></i>
-              <span>PostgreSQL</span>
-            </div>
-            <div class="skill-chip">
-              <i class="devicon-mongodb-plain colored"></i>
-              <span>MongoDB</span>
-            </div>
-            <div class="skill-chip">
-              <i class="devicon-redis-plain colored"></i>
-              <span>Redis</span>
-            </div>
-            <div class="skill-chip">
-              <i class="devicon-mysql-plain colored"></i>
-              <span>MySQL</span>
+              <i class="fas fa-shield-alt"></i>
+              <span>Azure Profiler</span>
             </div>
           </div>
         </div>
@@ -315,79 +273,61 @@
           <div class="timeline-card">
             <div class="timeline-header">
               <div>
-                <h3 class="job-title">Software Engineer</h3>
+                <h3 class="job-title">Software Engineer 2</h3>
                 <p class="company">
-                  <img src="https://img.icons8.com/color/24/source-code.png" alt="company" class="company-icon" />
-                  Tech Company · Full-time
+                  <i class="devicon-azure-plain colored" style="font-size:18px;margin-right:6px;"></i>
+                  Microsoft · Full-time
                 </p>
               </div>
-              <span class="date-badge">2023 – Present</span>
+              <span class="date-badge">Aug 2022 – Present</span>
             </div>
             <ul class="job-points">
-              <li>Designed and built microservices architecture serving <strong>1M+ daily requests</strong> using Python &amp; Go</li>
-              <li>Reduced API response times by <strong>40%</strong> through query optimization and caching strategies</li>
-              <li>Led migration of monolithic application to cloud-native architecture on AWS</li>
-              <li>Mentored junior engineers and conducted code reviews to maintain high code quality</li>
+              <li>Core member of <strong>Dataverse – Agent Data Platform</strong> team (Power Apps, Power Automate, Dynamics 365); SME for Runtime Crash, Runtime Memory, Number Sequence</li>
+              <li>Designed and implemented <strong>nZDT (Near Zero Downtime)</strong> servicing APIs, enabling seamless OS patching/upgrades and saving <strong>$300K/month</strong></li>
+              <li>Built Batch AutoScaling APIs to optimize runtime resource allocation, reducing costs by <strong>$117K/month</strong></li>
+              <li>Resolved <strong>90+ CodeQL security vulnerabilities</strong> and policheck issues, strengthening reliability and compliance</li>
+              <li>Developed <strong>6 cross-team Claude CLI plugins &amp; VS Code extensions</strong> and 3 team-specific tools, improving developer productivity</li>
+              <li>Created Finance &amp; Operations MCP and <strong>agentic AI automations</strong> for proactive issue resolution</li>
+              <li>Windows Server 2022 crash fix for Internal Windows File Read API impacting <strong>7,600+ prod environments</strong></li>
+              <li>Reduced Crash CRI from avg <strong>11.5 to 8.2</strong> per month; Number Sequence CRI from avg <strong>9 to 4</strong> per month</li>
             </ul>
             <div class="tags">
+              <span class="tag">C#</span>
+              <span class="tag">X++</span>
+              <span class="tag">.NET</span>
+              <span class="tag">Azure</span>
+              <span class="tag">Agentic AI</span>
+              <span class="tag">Power Platform</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="job-title">SEP 2 / Software Developer</h3>
+                <p class="company">
+                  <i class="fas fa-landmark" style="font-size:18px;margin-right:6px;color:#0a6ebd;"></i>
+                  JP Morgan Chase &amp; Co. · Full-time
+                </p>
+              </div>
+              <span class="date-badge">Aug 2020 – Aug 2022</span>
+            </div>
+            <ul class="job-points">
+              <li>Member of <strong>JISU Cross-Connectivity Platform</strong> for Equities, Credit, and E-Trading; enabled ultra-low latency (<strong>90–110 ms</strong>) order execution</li>
+              <li>Automated conversion of customer spec docs to FIX protocol configs using Python, saving <strong>30–50 hours/month</strong></li>
+              <li>Owned and maintained <strong>Public Finance instances</strong> for MUNI offerings via Bloomberg, TradeWeb, and MarketAxess</li>
+              <li>Modernized legacy codebase by upgrading <strong>27% of C code to C++</strong>, improving maintainability and performance</li>
+              <li>Introduced Poker-based sprint planning to enhance Agile methodology, reducing <strong>1–3 hours per sprint</strong> per team member</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">C</span>
+              <span class="tag">C++</span>
               <span class="tag">Python</span>
-              <span class="tag">Go</span>
-              <span class="tag">AWS</span>
-              <span class="tag">Kubernetes</span>
-              <span class="tag">PostgreSQL</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="timeline-item" data-aos="fade-up">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="timeline-header">
-              <div>
-                <h3 class="job-title">Software Engineer Intern</h3>
-                <p class="company">
-                  <img src="https://img.icons8.com/color/24/source-code.png" alt="company" class="company-icon" />
-                  Startup · Internship
-                </p>
-              </div>
-              <span class="date-badge">2022 – 2023</span>
-            </div>
-            <ul class="job-points">
-              <li>Built RESTful APIs with Node.js/Express serving the core product's backend</li>
-              <li>Implemented CI/CD pipelines using GitHub Actions, cutting deployment time by <strong>60%</strong></li>
-              <li>Developed React frontend components consumed by <strong>10k+ users</strong></li>
-            </ul>
-            <div class="tags">
-              <span class="tag">Node.js</span>
-              <span class="tag">React</span>
-              <span class="tag">Docker</span>
-              <span class="tag">MongoDB</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="timeline-item" data-aos="fade-up">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="timeline-header">
-              <div>
-                <h3 class="job-title">Open Source Contributor</h3>
-                <p class="company">
-                  <i class="fab fa-github" style="font-size:18px;margin-right:6px;"></i>
-                  Various Projects · Part-time
-                </p>
-              </div>
-              <span class="date-badge">2021 – Present</span>
-            </div>
-            <ul class="job-points">
-              <li>Contributed bug fixes and features to popular open-source repositories</li>
-              <li>Maintained own open-source libraries with <strong>500+ GitHub stars</strong></li>
-              <li>Authored technical blog posts and documentation for developer communities</li>
-            </ul>
-            <div class="tags">
-              <span class="tag">Open Source</span>
-              <span class="tag">GitHub</span>
-              <span class="tag">Community</span>
+              <span class="tag">FIX Protocol</span>
+              <span class="tag">Low Latency</span>
             </div>
           </div>
         </div>
@@ -533,11 +473,10 @@
           <div class="edu-info">
             <h3>Bachelor of Technology</h3>
             <p class="edu-sub">Computer Science &amp; Engineering</p>
-            <p class="edu-school"><i class="fas fa-university"></i> Premier Engineering University, India</p>
-            <p class="edu-date"><i class="fas fa-calendar-alt"></i> 2019 – 2023</p>
+            <p class="edu-school"><i class="fas fa-university"></i> Maulana Azad National Institute of Technology (MANIT), Bhopal</p>
+            <p class="edu-date"><i class="fas fa-calendar-alt"></i> 2016 – 2020</p>
             <div class="edu-highlights">
-              <span class="tag">CGPA: 8.9/10</span>
-              <span class="tag">Dean's List</span>
+              <span class="tag">CGPA: 8.3</span>
               <span class="tag">Algorithms</span>
               <span class="tag">OS</span>
               <span class="tag">Distributed Systems</span>
@@ -547,27 +486,27 @@
         <div class="edu-card">
           <div class="edu-icon">🏆</div>
           <div class="edu-info">
-            <h3>Certifications</h3>
+            <h3>Awards &amp; Achievements</h3>
             <div class="certs">
               <div class="cert-item">
-                <i class="devicon-amazonwebservices-original colored cert-logo"></i>
+                <i class="fas fa-medal cert-logo" style="font-size:24px;color:#e8b923;"></i>
                 <div>
-                  <strong>AWS Certified Solutions Architect</strong>
-                  <p>Amazon Web Services · 2023</p>
+                  <strong>21 Under 21 — GirlScript</strong>
+                  <p>Recognized for extraordinary technical &amp; soft skills at GirlScript Tech Summit, Nagpur (2019)</p>
                 </div>
               </div>
               <div class="cert-item">
-                <img src="https://img.icons8.com/color/24/kubernetes.png" alt="k8s" class="cert-logo" />
+                <i class="fas fa-trophy cert-logo" style="font-size:24px;color:#e8b923;"></i>
                 <div>
-                  <strong>Certified Kubernetes Administrator (CKA)</strong>
-                  <p>CNCF · 2024</p>
+                  <strong>First Prize: CODEBATTLE, Codathon</strong>
+                  <p>AIR 22 (Online), First Prize (Offline Final) — Technocrats Institute, Bhopal (2018)</p>
                 </div>
               </div>
               <div class="cert-item">
-                <i class="devicon-google-plain colored cert-logo"></i>
+                <i class="fas fa-star cert-logo" style="font-size:24px;color:#e8b923;"></i>
                 <div>
-                  <strong>Google Professional Cloud Developer</strong>
-                  <p>Google Cloud · 2024</p>
+                  <strong>AIR 22 &amp; Gold Medalist — NSTSE</strong>
+                  <p>Unified Council (2015)</p>
                 </div>
               </div>
             </div>
@@ -590,67 +529,253 @@
             <span class="dot yellow"></span>
             <span class="dot green"></span>
           </div>
-          <span class="resume-preview-title">resume.pdf</span>
+          <span class="resume-preview-title">Ishaan_Dwivedi_Resume.pdf</span>
           <div class="resume-preview-actions">
-            <button class="resume-icon-btn" title="Download" id="download-resume-btn">
+            <a href="assets/resume.pdf" download="Ishaan_Dwivedi_Resume.pdf" class="resume-icon-btn" title="Download">
               <i class="fas fa-download"></i>
-            </button>
+            </a>
           </div>
         </div>
         <div class="resume-preview-body">
-          <!-- Embedded resume preview (mock) -->
-          <div class="resume-mock">
-            <div class="resume-mock-header">
-              <h2>Ishaan Dwivedi</h2>
-              <p>Software Engineer · India</p>
-              <p>
-                <a href="mailto:ishaan@example.com"><i class="fas fa-envelope"></i> ishaan@example.com</a>
-                &nbsp;|&nbsp;
-                <a href="https://linkedin.com/in/ishaandwivedi" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                &nbsp;|&nbsp;
-                <a href="https://github.com/ishu-dvd" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-              </p>
+          <!-- Embedded real PDF preview -->
+          <object data="assets/resume.pdf" type="application/pdf" class="resume-pdf-embed">
+            <div class="resume-pdf-fallback">
+              <i class="fas fa-file-pdf"></i>
+              <p>PDF preview is not available in your browser.</p>
+              <a href="assets/resume.pdf" download="Ishaan_Dwivedi_Resume.pdf" class="btn btn-primary">
+                <i class="fas fa-download"></i> Download Resume
+              </a>
             </div>
-            <hr class="resume-divider" />
-            <div class="resume-mock-section">
-              <h3>🧑‍💻 Experience</h3>
-              <div class="resume-item">
-                <strong>Software Engineer</strong> — Tech Company
-                <span class="resume-date">2023–Present</span>
-                <p>Microservices · AWS · Python · Go · Kubernetes</p>
-              </div>
-              <div class="resume-item">
-                <strong>Software Engineer Intern</strong> — Startup
-                <span class="resume-date">2022–2023</span>
-                <p>Node.js · React · Docker · MongoDB</p>
-              </div>
-            </div>
-            <div class="resume-mock-section">
-              <h3>🎓 Education</h3>
-              <div class="resume-item">
-                <strong>B.Tech Computer Science</strong> — Premier Engineering University
-                <span class="resume-date">2019–2023</span>
-                <p>CGPA: 8.9 · Dean's List</p>
-              </div>
-            </div>
-            <div class="resume-mock-section">
-              <h3>🛠️ Skills</h3>
-              <p><strong>Languages:</strong> Python, Go, JavaScript, TypeScript, Java, C++</p>
-              <p><strong>Frameworks:</strong> React, Node.js, FastAPI, Django, Spring</p>
-              <p><strong>Cloud &amp; DevOps:</strong> AWS, Docker, Kubernetes, Terraform, CI/CD</p>
-              <p><strong>Databases:</strong> PostgreSQL, MongoDB, Redis, MySQL</p>
-            </div>
-          </div>
+          </object>
         </div>
         <div class="resume-download-bar">
-          <p class="resume-note">
-            <i class="fas fa-info-circle"></i>
-            Place your resume PDF at <code>assets/resume.pdf</code> to enable the download button.
-          </p>
           <a href="assets/resume.pdf" download="Ishaan_Dwivedi_Resume.pdf" class="btn btn-primary resume-download-btn" id="download-link">
             <i class="fas fa-file-pdf"></i> Download Resume
           </a>
+          <a href="mailto:imishu98@gmail.com?subject=Regarding%20your%20resume" class="btn btn-outline resume-download-btn">
+            <i class="fas fa-envelope"></i> Email Me
+          </a>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── LINKEDIN POSTS ─── -->
+  <section id="linkedin-posts">
+    <div class="section-inner">
+      <h2 class="section-title"><span class="accent">07.</span> Featured Posts</h2>
+      <p class="section-subtitle">Thoughts &amp; insights I share on LinkedIn</p>
+
+      <div class="posts-grid">
+        <a href="https://www.linkedin.com/in/ishaan-dwivedi/recent-activity/all/" target="_blank" class="post-card">
+          <div class="post-icon"><i class="fab fa-linkedin"></i></div>
+          <div class="post-body">
+            <h3>Agentic AI &amp; Developer Tooling</h3>
+            <p>How I built 6 cross-team Claude CLI plugins and VS Code extensions at Microsoft to supercharge developer productivity across Dataverse.</p>
+            <span class="post-link">Read on LinkedIn <i class="fas fa-external-link-alt"></i></span>
+          </div>
+        </a>
+
+        <a href="https://www.linkedin.com/in/ishaan-dwivedi/recent-activity/all/" target="_blank" class="post-card">
+          <div class="post-icon"><i class="fab fa-linkedin"></i></div>
+          <div class="post-body">
+            <h3>Saving $300K/Month with nZDT APIs</h3>
+            <p>The story behind designing Near Zero Downtime servicing APIs that enabled seamless OS patching and upgrades at scale for Dynamics 365.</p>
+            <span class="post-link">Read on LinkedIn <i class="fas fa-external-link-alt"></i></span>
+          </div>
+        </a>
+
+        <a href="https://www.linkedin.com/in/ishaan-dwivedi/recent-activity/all/" target="_blank" class="post-card">
+          <div class="post-icon"><i class="fab fa-linkedin"></i></div>
+          <div class="post-body">
+            <h3>From C to C++ — Modernizing Legacy Code</h3>
+            <p>Lessons from upgrading 27% of a legacy C codebase to C++ at JP Morgan Chase, improving maintainability and performance in production trading systems.</p>
+            <span class="post-link">Read on LinkedIn <i class="fas fa-external-link-alt"></i></span>
+          </div>
+        </a>
+      </div>
+
+      <div style="text-align:center;margin-top:2rem;">
+        <a href="https://www.linkedin.com/in/ishaan-dwivedi" target="_blank" class="btn btn-outline">
+          <i class="fab fa-linkedin"></i> View All Posts on LinkedIn
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── HOBBIES ─── -->
+  <section id="hobbies">
+    <div class="section-inner">
+      <h2 class="section-title"><span class="accent">08.</span> Hobbies &amp; Interests</h2>
+      <p class="section-subtitle">What I do when I'm not writing code</p>
+
+      <div class="hobbies-grid">
+
+        <!-- ── Ukulele & Singing ── -->
+        <div class="hobby-card hobby-wide fade-in-up">
+          <div class="hobby-header">
+            <span class="hobby-emoji">🎸🎤</span>
+            <h3>Ukulele &amp; Singing</h3>
+          </div>
+          <p class="hobby-desc">
+            I love strumming my ukulele and singing along. My go-to chord progression is
+            <strong>C → Am → G → F</strong> — it's amazing how many hits fit this pattern!
+          </p>
+          <div class="song-lists">
+            <div class="song-column">
+              <h4><i class="fas fa-globe"></i> English Songs</h4>
+              <ul class="song-list">
+                <li>
+                  <a href="https://www.youtube.com/watch?v=fJ9rUzIMcZQ" target="_blank">
+                    <i class="fas fa-play-circle"></i> Let It Be — The Beatles
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/watch?v=kXYiU_JCYtU" target="_blank">
+                    <i class="fas fa-play-circle"></i> No Woman, No Cry — Bob Marley
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/watch?v=QDYfEBY9NM4" target="_blank">
+                    <i class="fas fa-play-circle"></i> I'm Yours — Jason Mraz
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/watch?v=pXRviuL6vMY" target="_blank">
+                    <i class="fas fa-play-circle"></i> Riptide — Vance Joy
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/watch?v=rYEDA3JcQqw" target="_blank">
+                    <i class="fas fa-play-circle"></i> Perfect — Ed Sheeran
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/watch?v=k32IPg4iCjk" target="_blank">
+                    <i class="fas fa-play-circle"></i> Can't Help Falling in Love — Elvis Presley
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="song-column">
+              <h4><i class="fas fa-om"></i> Hindi Songs</h4>
+              <ul class="song-list">
+                <li>
+                  <a href="https://www.youtube.com/watch?v=hoNb6HuNmU0" target="_blank">
+                    <i class="fas fa-play-circle"></i> Tum Hi Ho — Aashiqui 2
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/watch?v=Jh-SAYyfxkA" target="_blank">
+                    <i class="fas fa-play-circle"></i> Kal Ho Naa Ho — Title Track
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/watch?v=cYOB941gyXI" target="_blank">
+                    <i class="fas fa-play-circle"></i> Tere Bina — A.R. Rahman
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/watch?v=AtHuEByaoKA" target="_blank">
+                    <i class="fas fa-play-circle"></i> Channa Mereya — Ae Dil Hai Mushkil
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/watch?v=F6GAPcbLMiQ" target="_blank">
+                    <i class="fas fa-play-circle"></i> Tujhe Kitna Chahne Lage — Kabir Singh
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/watch?v=BddP6PYo2gs" target="_blank">
+                    <i class="fas fa-play-circle"></i> Khairiyat — Chhichhore
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="chord-badge">
+            <span class="chord">C</span>
+            <span class="chord">Am</span>
+            <span class="chord">G</span>
+            <span class="chord">F</span>
+          </div>
+        </div>
+
+        <!-- ── Cricket ── -->
+        <div class="hobby-card fade-in-up">
+          <div class="hobby-header">
+            <span class="hobby-emoji">🏏</span>
+            <h3>Cricket</h3>
+          </div>
+          <p class="hobby-desc">
+            Whether it's gully cricket on a Sunday morning or watching an intense IPL final,
+            cricket has been a part of my life since childhood. There's nothing like the thrill of a
+            last-ball finish!
+          </p>
+          <div class="hobby-media">
+            <img
+              src="https://images.unsplash.com/photo-1531415074968-036ba1b575da?w=480&q=80&auto=format&fit=crop"
+              alt="Cricket in action"
+              class="hobby-img"
+              loading="lazy"
+            />
+          </div>
+        </div>
+
+        <!-- ── Chess ── -->
+        <div class="hobby-card fade-in-up">
+          <div class="hobby-header">
+            <span class="hobby-emoji">♟️</span>
+            <h3>Chess</h3>
+          </div>
+          <p class="hobby-desc">
+            I enjoy the strategic depth of chess. My favorite opening to play as White is the
+            <strong>Italian Game (1.e4 e5 2.Nf3 Nc6 3.Bc4)</strong> — a classical opening that targets
+            the f7 weakness early.
+          </p>
+          <div class="hobby-media">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Italian_Game.png/390px-Italian_Game.png"
+              alt="Italian Game chess opening position after 1.e4 e5 2.Nf3 Nc6 3.Bc4"
+              class="hobby-img chess-board"
+              loading="lazy"
+            />
+            <span class="hobby-caption">Italian Game — after 3.Bc4</span>
+          </div>
+        </div>
+
+        <!-- ── Computer Gaming ── -->
+        <div class="hobby-card fade-in-up">
+          <div class="hobby-header">
+            <span class="hobby-emoji">🎮</span>
+            <h3>Computer Gaming</h3>
+          </div>
+          <p class="hobby-desc">
+            When I need to unwind, tactical FPS games are my go-to. I love the team coordination
+            in <strong>Valorant</strong> and the raw aim duels in <strong>CS2</strong>.
+          </p>
+          <div class="hobby-media gaming-duo">
+            <div class="game-poster">
+              <img
+                src="https://images.unsplash.com/photo-1636489953081-c4ebde550a04?w=400&q=80&auto=format&fit=crop"
+                alt="Valorant gameplay"
+                class="hobby-img"
+                loading="lazy"
+              />
+              <span class="game-label">Valorant</span>
+            </div>
+            <div class="game-poster">
+              <img
+                src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=400&q=80&auto=format&fit=crop"
+                alt="CS2 competitive gaming"
+                class="hobby-img"
+                loading="lazy"
+              />
+              <span class="game-label">CS2</span>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -658,7 +783,7 @@
   <!-- ─── CONTACT ─── -->
   <section id="contact">
     <div class="section-inner">
-      <h2 class="section-title"><span class="accent">07.</span> Contact</h2>
+      <h2 class="section-title"><span class="accent">09.</span> Contact</h2>
       <p class="section-subtitle">Let's build something amazing together</p>
 
       <div class="contact-grid">
@@ -668,18 +793,18 @@
             freelance project, or just a tech chat. My inbox is always open! 📬
           </p>
           <div class="contact-links">
-            <a href="mailto:ishaan@example.com" class="contact-link">
+            <a href="mailto:imishu98@gmail.com" class="contact-link">
               <div class="contact-icon"><i class="fas fa-envelope"></i></div>
               <div>
                 <strong>Email</strong>
-                <p>ishaan@example.com</p>
+                <p>imishu98@gmail.com</p>
               </div>
             </a>
-            <a href="https://linkedin.com/in/ishaandwivedi" target="_blank" class="contact-link">
+            <a href="https://www.linkedin.com/in/ishaan-dwivedi" target="_blank" class="contact-link">
               <div class="contact-icon linkedin"><i class="fab fa-linkedin-in"></i></div>
               <div>
                 <strong>LinkedIn</strong>
-                <p>linkedin.com/in/ishaandwivedi</p>
+                <p>linkedin.com/in/ishaan-dwivedi</p>
               </div>
             </a>
             <a href="https://github.com/ishu-dvd" target="_blank" class="contact-link">
@@ -716,6 +841,9 @@
             <i class="fas fa-paper-plane"></i> Send Message
           </button>
           <p class="form-note" id="form-status"></p>
+          <p class="form-note form-hint">
+            <i class="fas fa-info-circle"></i> This opens your default email client to send me a message at <strong>imishu98@gmail.com</strong>
+          </p>
         </form>
       </div>
     </div>
@@ -730,7 +858,7 @@
       <p class="footer-tagline">Built with <span class="heart">♥</span> and lots of <span class="coffee">☕</span></p>
       <div class="footer-links">
         <a href="https://github.com/ishu-dvd" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://linkedin.com/in/ishaandwivedi" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.linkedin.com/in/ishaan-dwivedi" target="_blank"><i class="fab fa-linkedin-in"></i></a>
         <a href="https://twitter.com/ishaandwivedi" target="_blank"><i class="fab fa-x-twitter"></i></a>
       </div>
       <p class="footer-copy">© 2025 Ishaan Dwivedi · All rights reserved</p>
