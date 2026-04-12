@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ishaan Dwivedi | Software Engineer</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Devicons (tech logos) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ─── PARTICLE CANVAS ─── -->
+  <canvas id="particles"></canvas>
+
+  <!-- ─── NAV ─── -->
+  <nav id="navbar">
+    <div class="nav-logo">
+      <span class="bracket">&lt;</span>ID<span class="bracket">/&gt;</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about">about</a></li>
+      <li><a href="#skills">skills</a></li>
+      <li><a href="#experience">experience</a></li>
+      <li><a href="#projects">projects</a></li>
+      <li><a href="#education">education</a></li>
+      <li><a href="#contact">contact</a></li>
+    </ul>
+    <a href="#resume" class="nav-resume-btn">resume</a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ─── HERO ─── -->
+  <section id="hero">
+    <div class="hero-content">
+      <div class="terminal-window">
+        <div class="terminal-bar">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="terminal-title">ishaan@dev:~$</span>
+        </div>
+        <div class="terminal-body">
+          <p class="terminal-line"><span class="prompt">$</span> whoami</p>
+          <h1 class="hero-name">Ishaan Dwivedi</h1>
+          <p class="terminal-line"><span class="prompt">$</span> cat role.txt</p>
+          <h2 class="hero-role">
+            <span id="typed-text"></span><span class="cursor">|</span>
+          </h2>
+          <p class="terminal-line"><span class="prompt">$</span> echo $PASSION</p>
+          <p class="hero-passion">Building scalable systems &amp; elegant solutions ✨</p>
+          <p class="terminal-line"><span class="prompt">$</span> <span class="blinking-cursor">_</span></p>
+        </div>
+      </div>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">
+          <i class="fas fa-code"></i> View Projects
+        </a>
+        <a href="#contact" class="btn btn-outline">
+          <i class="fas fa-envelope"></i> Get in Touch
+        </a>
+      </div>
+    </div>
+    <div class="hero-image-wrapper">
+      <div class="hero-glow"></div>
+      <img
+        src="https://images.unsplash.com/photo-1607705703571-c5a8695f18f6?w=520&q=80&auto=format&fit=crop"
+        alt="Developer at work"
+        class="hero-img"
+        loading="eager"
+      />
+      <div class="hero-badge">
+        <i class="fas fa-circle status-dot"></i> Available for opportunities
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── ABOUT ─── -->
+  <section id="about">
+    <div class="section-inner">
+      <h2 class="section-title"><span class="accent">01.</span> About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Hey there! 👋 I'm <strong>Ishaan Dwivedi</strong>, a passionate Software Engineer
+            who loves turning complex problems into clean, efficient code.
+          </p>
+          <p>
+            With a deep interest in <strong>full-stack development</strong>,
+            <strong>cloud architecture</strong>, and <strong>distributed systems</strong>,
+            I thrive at the intersection of creativity and engineering.
+          </p>
+          <p>
+            When I'm not coding, you'll find me exploring the latest tech trends,
+            contributing to open source, or sharing knowledge with the developer community. 🚀
+          </p>
+          <div class="about-facts">
+            <div class="fact">
+              <span class="fact-icon">📍</span>
+              <span>Based in India</span>
+            </div>
+            <div class="fact">
+              <span class="fact-icon">💼</span>
+              <span>Software Engineer</span>
+            </div>
+            <div class="fact">
+              <span class="fact-icon">🎓</span>
+              <span>Computer Science Graduate</span>
+            </div>
+            <div class="fact">
+              <span class="fact-icon">☕</span>
+              <span>Coffee-driven developer</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-image-container">
+          <div class="code-card">
+            <div class="code-card-header">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span>profile.json</span>
+            </div>
+            <pre class="code-snippet"><span class="json-key">{</span>
+  <span class="json-key">"name"</span>: <span class="json-str">"Ishaan Dwivedi"</span>,
+  <span class="json-key">"role"</span>: <span class="json-str">"Software Engineer"</span>,
+  <span class="json-key">"location"</span>: <span class="json-str">"India 🇮🇳"</span>,
+  <span class="json-key">"languages"</span>: [
+    <span class="json-str">"Python"</span>,
+    <span class="json-str">"JavaScript"</span>,
+    <span class="json-str">"Java"</span>,
+    <span class="json-str">"Go"</span>
+  ],
+  <span class="json-key">"openToWork"</span>: <span class="json-bool">true</span>,
+  <span class="json-key">"hobbies"</span>: [
+    <span class="json-str">"Open Source"</span>,
+    <span class="json-str">"Cloud Computing"</span>,
+    <span class="json-str">"Gaming"</span>
+  ]
+<span class="json-key">}</span></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SKILLS ─── -->
+  <section id="skills">
+    <div class="section-inner">
+      <h2 class="section-title"><span class="accent">02.</span> Tech Stack</h2>
+      <p class="section-subtitle">Tools &amp; technologies I work with</p>
+
+      <div class="skills-categories">
+
+        <!-- Languages -->
+        <div class="skill-category">
+          <h3 class="skill-cat-title"><i class="fas fa-code"></i> Languages</h3>
+          <div class="skill-grid">
+            <div class="skill-chip">
+              <i class="devicon-python-plain colored"></i>
+              <span>Python</span>
+            </div>
+            <div class="skill-chip">
+              <i class="devicon-javascript-plain colored"></i>
+              <span>JavaScript</span>
+            </div>
+            <div class="skill-chip">
+              <i class="devicon-typescript-plain colored"></i>
+              <span>TypeScript</span>
+            </div>
+            <div class="skill-chip">
+              <i class="devicon-java-plain colored"></i>
+              <span>Java</span>
+            </div>
+            <div class="skill-chip">
+              <i class="devicon-go-plain colored"></i>
+              <span>Go</span>
+            </div>
+            <div class="skill-chip">
+              <i class="devicon-cplusplus-plain colored"></i>
+              <span>C++</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Frontend -->
+        <div class="skill-category">
+          <h3 class="skill-cat-title"><i class="fas fa-desktop"></i> Frontend</h3>
+          <div class="skill-grid">
+            <div class="skill-chip">
+              <i class="devicon-react-original colored"></i>
+              <span>React</span>
+            </div>
+            <div class="skill-chip">
+              <i class="devicon-nextjs-original"></i>
+              <span>Next.js</span>
+            </div>
+            <div class="skill-chip">
+              <i class="devicon-html5-plain colored"></i>
+              <span>HTML5</span>
+            </div>
+            <div class="skill-chip">
+              <i class="devicon-css3-plain colored"></i>
+              <span>CSS3</span>
+            </div>
+            <div class="skill-chip">
+              <i class="devicon-tailwindcss-plain colored"></i>
+              <span>Tailwind</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Backend -->
+        <div class="skill-category">
+          <h3 class="skill-cat-title"><i class="fas fa-server"></i> Backend</h3>
+          <div class="skill-grid">
+            <div class="skill-chip">
+              <i class="devicon-nodejs-plain colored"></i>
+              <span>Node.js</span>
+            </div>
+            <div class="skill-chip">
+              <i class="devicon-fastapi-plain colored"></i>
+              <span>FastAPI</span>
+            </div>
+            <div class="skill-chip">
+              <i class="devicon-django-plain colored"></i>
+              <span>Django</span>
+            </div>
+            <div class="skill-chip">
+              <i class="devicon-spring-plain colored"></i>
+              <span>Spring</span>
+            </div>
+            <div class="skill-chip">
+              <i class="devicon-graphql-plain colored"></i>
+              <span>GraphQL</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cloud & DevOps -->
+        <div class="skill-category">
+          <h3 class="skill-cat-title"><i class="fas fa-cloud"></i> Cloud &amp; DevOps</h3>
+          <div class="skill-grid">
+            <div class="skill-chip">
+              <i class="devicon-amazonwebservices-original colored"></i>
+              <span>AWS</span>
+            </div>
+            <div class="skill-chip">
+              <i class="devicon-docker-plain colored"></i>
+              <span>Docker</span>
+            </div>
+            <div class="skill-chip">
+              <i class="devicon-kubernetes-plain colored"></i>
+              <span>Kubernetes</span>
+            </div>
+            <div class="skill-chip">
+              <i class="devicon-github-original"></i>
+              <span>GitHub Actions</span>
+            </div>
+            <div class="skill-chip">
+              <i class="devicon-terraform-plain colored"></i>
+              <span>Terraform</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Databases -->
+        <div class="skill-category">
+          <h3 class="skill-cat-title"><i class="fas fa-database"></i> Databases</h3>
+          <div class="skill-grid">
+            <div class="skill-chip">
+              <i class="devicon-postgresql-plain colored"></i>
+              <span>PostgreSQL</span>
+            </div>
+            <div class="skill-chip">
+              <i class="devicon-mongodb-plain colored"></i>
+              <span>MongoDB</span>
+            </div>
+            <div class="skill-chip">
+              <i class="devicon-redis-plain colored"></i>
+              <span>Redis</span>
+            </div>
+            <div class="skill-chip">
+              <i class="devicon-mysql-plain colored"></i>
+              <span>MySQL</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── EXPERIENCE ─── -->
+  <section id="experience">
+    <div class="section-inner">
+      <h2 class="section-title"><span class="accent">03.</span> Experience</h2>
+
+      <div class="timeline">
+
+        <div class="timeline-item" data-aos="fade-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="job-title">Software Engineer</h3>
+                <p class="company">
+                  <img src="https://img.icons8.com/color/24/source-code.png" alt="company" class="company-icon" />
+                  Tech Company · Full-time
+                </p>
+              </div>
+              <span class="date-badge">2023 – Present</span>
+            </div>
+            <ul class="job-points">
+              <li>Designed and built microservices architecture serving <strong>1M+ daily requests</strong> using Python &amp; Go</li>
+              <li>Reduced API response times by <strong>40%</strong> through query optimization and caching strategies</li>
+              <li>Led migration of monolithic application to cloud-native architecture on AWS</li>
+              <li>Mentored junior engineers and conducted code reviews to maintain high code quality</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">Python</span>
+              <span class="tag">Go</span>
+              <span class="tag">AWS</span>
+              <span class="tag">Kubernetes</span>
+              <span class="tag">PostgreSQL</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="job-title">Software Engineer Intern</h3>
+                <p class="company">
+                  <img src="https://img.icons8.com/color/24/source-code.png" alt="company" class="company-icon" />
+                  Startup · Internship
+                </p>
+              </div>
+              <span class="date-badge">2022 – 2023</span>
+            </div>
+            <ul class="job-points">
+              <li>Built RESTful APIs with Node.js/Express serving the core product's backend</li>
+              <li>Implemented CI/CD pipelines using GitHub Actions, cutting deployment time by <strong>60%</strong></li>
+              <li>Developed React frontend components consumed by <strong>10k+ users</strong></li>
+            </ul>
+            <div class="tags">
+              <span class="tag">Node.js</span>
+              <span class="tag">React</span>
+              <span class="tag">Docker</span>
+              <span class="tag">MongoDB</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="job-title">Open Source Contributor</h3>
+                <p class="company">
+                  <i class="fab fa-github" style="font-size:18px;margin-right:6px;"></i>
+                  Various Projects · Part-time
+                </p>
+              </div>
+              <span class="date-badge">2021 – Present</span>
+            </div>
+            <ul class="job-points">
+              <li>Contributed bug fixes and features to popular open-source repositories</li>
+              <li>Maintained own open-source libraries with <strong>500+ GitHub stars</strong></li>
+              <li>Authored technical blog posts and documentation for developer communities</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">Open Source</span>
+              <span class="tag">GitHub</span>
+              <span class="tag">Community</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PROJECTS ─── -->
+  <section id="projects">
+    <div class="section-inner">
+      <h2 class="section-title"><span class="accent">04.</span> Projects</h2>
+      <p class="section-subtitle">Things I've built</p>
+
+      <div class="projects-grid">
+
+        <div class="project-card featured">
+          <div class="project-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=600&q=80&auto=format&fit=crop"
+              alt="Distributed Systems Project"
+              class="project-img"
+              loading="lazy"
+            />
+            <div class="project-overlay">
+              <span class="featured-badge">⭐ Featured</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-name">CloudScale Orchestrator</h3>
+            <p class="project-desc">
+              A distributed task orchestration engine built in Go that manages
+              microservice workflows across multi-cloud environments. Handles
+              fault tolerance, retries, and real-time monitoring at scale.
+            </p>
+            <div class="tags">
+              <span class="tag">Go</span>
+              <span class="tag">Kubernetes</span>
+              <span class="tag">gRPC</span>
+              <span class="tag">Redis</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+              <a href="#" class="project-link live"><i class="fas fa-external-link-alt"></i> Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80&auto=format&fit=crop"
+              alt="Analytics Dashboard"
+              class="project-img"
+              loading="lazy"
+            />
+          </div>
+          <div class="project-body">
+            <h3 class="project-name">DevMetrics Dashboard</h3>
+            <p class="project-desc">
+              Real-time developer productivity analytics dashboard with GitHub
+              integration, team insights, and automated reporting using
+              React + FastAPI.
+            </p>
+            <div class="tags">
+              <span class="tag">React</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">PostgreSQL</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+              <a href="#" class="project-link live"><i class="fas fa-external-link-alt"></i> Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&q=80&auto=format&fit=crop"
+              alt="AI Chat Tool"
+              class="project-img"
+              loading="lazy"
+            />
+          </div>
+          <div class="project-body">
+            <h3 class="project-name">CodeBot AI</h3>
+            <p class="project-desc">
+              An AI-powered code review assistant that integrates with GitHub
+              PRs, provides intelligent suggestions, detects bugs, and
+              auto-generates documentation using LLMs.
+            </p>
+            <div class="tags">
+              <span class="tag">Python</span>
+              <span class="tag">LLM</span>
+              <span class="tag">GitHub API</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+              <a href="#" class="project-link live"><i class="fas fa-external-link-alt"></i> Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&q=80&auto=format&fit=crop"
+              alt="IoT Platform"
+              class="project-img"
+              loading="lazy"
+            />
+          </div>
+          <div class="project-body">
+            <h3 class="project-name">IoT Data Pipeline</h3>
+            <p class="project-desc">
+              High-throughput IoT data ingestion pipeline processing
+              <strong>100k events/sec</strong> with real-time alerting,
+              built on Kafka and AWS Kinesis.
+            </p>
+            <div class="tags">
+              <span class="tag">Kafka</span>
+              <span class="tag">AWS</span>
+              <span class="tag">Python</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── EDUCATION ─── -->
+  <section id="education">
+    <div class="section-inner">
+      <h2 class="section-title"><span class="accent">05.</span> Education</h2>
+      <div class="education-grid">
+        <div class="edu-card">
+          <div class="edu-icon">🎓</div>
+          <div class="edu-info">
+            <h3>Bachelor of Technology</h3>
+            <p class="edu-sub">Computer Science &amp; Engineering</p>
+            <p class="edu-school"><i class="fas fa-university"></i> Premier Engineering University, India</p>
+            <p class="edu-date"><i class="fas fa-calendar-alt"></i> 2019 – 2023</p>
+            <div class="edu-highlights">
+              <span class="tag">CGPA: 8.9/10</span>
+              <span class="tag">Dean's List</span>
+              <span class="tag">Algorithms</span>
+              <span class="tag">OS</span>
+              <span class="tag">Distributed Systems</span>
+            </div>
+          </div>
+        </div>
+        <div class="edu-card">
+          <div class="edu-icon">🏆</div>
+          <div class="edu-info">
+            <h3>Certifications</h3>
+            <div class="certs">
+              <div class="cert-item">
+                <i class="devicon-amazonwebservices-original colored cert-logo"></i>
+                <div>
+                  <strong>AWS Certified Solutions Architect</strong>
+                  <p>Amazon Web Services · 2023</p>
+                </div>
+              </div>
+              <div class="cert-item">
+                <img src="https://img.icons8.com/color/24/kubernetes.png" alt="k8s" class="cert-logo" />
+                <div>
+                  <strong>Certified Kubernetes Administrator (CKA)</strong>
+                  <p>CNCF · 2024</p>
+                </div>
+              </div>
+              <div class="cert-item">
+                <i class="devicon-google-plain colored cert-logo"></i>
+                <div>
+                  <strong>Google Professional Cloud Developer</strong>
+                  <p>Google Cloud · 2024</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── RESUME ─── -->
+  <section id="resume">
+    <div class="section-inner resume-section">
+      <h2 class="section-title"><span class="accent">06.</span> Resume</h2>
+      <p class="section-subtitle">View my full resume or download it</p>
+
+      <div class="resume-preview-card">
+        <div class="resume-preview-header">
+          <div class="resume-preview-dots">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <span class="resume-preview-title">resume.pdf</span>
+          <div class="resume-preview-actions">
+            <button class="resume-icon-btn" title="Download" id="download-resume-btn">
+              <i class="fas fa-download"></i>
+            </button>
+          </div>
+        </div>
+        <div class="resume-preview-body">
+          <!-- Embedded resume preview (mock) -->
+          <div class="resume-mock">
+            <div class="resume-mock-header">
+              <h2>Ishaan Dwivedi</h2>
+              <p>Software Engineer · India</p>
+              <p>
+                <a href="mailto:ishaan@example.com"><i class="fas fa-envelope"></i> ishaan@example.com</a>
+                &nbsp;|&nbsp;
+                <a href="https://linkedin.com/in/ishaandwivedi" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                &nbsp;|&nbsp;
+                <a href="https://github.com/ishu-dvd" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+              </p>
+            </div>
+            <hr class="resume-divider" />
+            <div class="resume-mock-section">
+              <h3>🧑‍💻 Experience</h3>
+              <div class="resume-item">
+                <strong>Software Engineer</strong> — Tech Company
+                <span class="resume-date">2023–Present</span>
+                <p>Microservices · AWS · Python · Go · Kubernetes</p>
+              </div>
+              <div class="resume-item">
+                <strong>Software Engineer Intern</strong> — Startup
+                <span class="resume-date">2022–2023</span>
+                <p>Node.js · React · Docker · MongoDB</p>
+              </div>
+            </div>
+            <div class="resume-mock-section">
+              <h3>🎓 Education</h3>
+              <div class="resume-item">
+                <strong>B.Tech Computer Science</strong> — Premier Engineering University
+                <span class="resume-date">2019–2023</span>
+                <p>CGPA: 8.9 · Dean's List</p>
+              </div>
+            </div>
+            <div class="resume-mock-section">
+              <h3>🛠️ Skills</h3>
+              <p><strong>Languages:</strong> Python, Go, JavaScript, TypeScript, Java, C++</p>
+              <p><strong>Frameworks:</strong> React, Node.js, FastAPI, Django, Spring</p>
+              <p><strong>Cloud &amp; DevOps:</strong> AWS, Docker, Kubernetes, Terraform, CI/CD</p>
+              <p><strong>Databases:</strong> PostgreSQL, MongoDB, Redis, MySQL</p>
+            </div>
+          </div>
+        </div>
+        <div class="resume-download-bar">
+          <p class="resume-note">
+            <i class="fas fa-info-circle"></i>
+            Place your resume PDF at <code>assets/resume.pdf</code> to enable the download button.
+          </p>
+          <a href="assets/resume.pdf" download="Ishaan_Dwivedi_Resume.pdf" class="btn btn-primary resume-download-btn" id="download-link">
+            <i class="fas fa-file-pdf"></i> Download Resume
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ─── -->
+  <section id="contact">
+    <div class="section-inner">
+      <h2 class="section-title"><span class="accent">07.</span> Contact</h2>
+      <p class="section-subtitle">Let's build something amazing together</p>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p class="contact-intro">
+            I'm currently open to <strong>new opportunities</strong> — whether it's a full-time role,
+            freelance project, or just a tech chat. My inbox is always open! 📬
+          </p>
+          <div class="contact-links">
+            <a href="mailto:ishaan@example.com" class="contact-link">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <strong>Email</strong>
+                <p>ishaan@example.com</p>
+              </div>
+            </a>
+            <a href="https://linkedin.com/in/ishaandwivedi" target="_blank" class="contact-link">
+              <div class="contact-icon linkedin"><i class="fab fa-linkedin-in"></i></div>
+              <div>
+                <strong>LinkedIn</strong>
+                <p>linkedin.com/in/ishaandwivedi</p>
+              </div>
+            </a>
+            <a href="https://github.com/ishu-dvd" target="_blank" class="contact-link">
+              <div class="contact-icon github"><i class="fab fa-github"></i></div>
+              <div>
+                <strong>GitHub</strong>
+                <p>github.com/ishu-dvd</p>
+              </div>
+            </a>
+            <a href="https://twitter.com/ishaandwivedi" target="_blank" class="contact-link">
+              <div class="contact-icon twitter"><i class="fab fa-x-twitter"></i></div>
+              <div>
+                <strong>Twitter / X</strong>
+                <p>@ishaandwivedi</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="What's on your mind?" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary full-width">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+          <p class="form-note" id="form-status"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="bracket">&lt;</span>ID<span class="bracket">/&gt;</span>
+      </div>
+      <p class="footer-tagline">Built with <span class="heart">♥</span> and lots of <span class="coffee">☕</span></p>
+      <div class="footer-links">
+        <a href="https://github.com/ishu-dvd" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/ishaandwivedi" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://twitter.com/ishaandwivedi" target="_blank"><i class="fab fa-x-twitter"></i></a>
+      </div>
+      <p class="footer-copy">© 2025 Ishaan Dwivedi · All rights reserved</p>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="back-to-top" title="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
