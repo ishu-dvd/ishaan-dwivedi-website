@@ -6,11 +6,12 @@
 
 // ── Typing effect ──────────────────────────────────────────
 const roles = [
-  'Full-Stack Engineer',
-  'Cloud Architect',
-  'Open Source Enthusiast',
+  'Software Engineer II @ Microsoft',
+  'System Architect / Designer',
+  'Agentic AI Builder',
+  'Cloud Platform Engineer',
+  'Developer Tooling Creator',
   'Problem Solver',
-  'System Designer',
 ];
 let roleIdx = 0;
 let charIdx = 0;

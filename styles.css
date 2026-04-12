@@ -1137,6 +1137,53 @@ footer {
 /* ─────────────────────────────────────────
    SCROLL ANIMATION HELPER
 ───────────────────────────────────────── */
+/* ── LinkedIn Posts ───────────────────────────── */
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.post-card {
+  display: flex;
+  gap: 1rem;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-decoration: none;
+  color: var(--text);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+.post-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(100, 255, 218, 0.08);
+  border-color: var(--accent);
+}
+.post-icon {
+  font-size: 2rem;
+  color: #0a66c2;
+  flex-shrink: 0;
+  padding-top: 0.15rem;
+}
+.post-body h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
+  color: var(--heading);
+}
+.post-body p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--text-muted, var(--text));
+  margin-bottom: 0.75rem;
+}
+.post-link {
+  font-size: 0.85rem;
+  color: var(--accent);
+  font-weight: 500;
+}
+.post-link i { margin-left: 0.25rem; font-size: 0.75rem; }
+
 .fade-in-up {
   opacity: 0;
   transform: translateY(30px);
