@@ -34,7 +34,6 @@
       <li><a href="#about">about</a></li>
       <li><a href="#skills">skills</a></li>
       <li><a href="#experience">experience</a></li>
-      <li><a href="#projects">projects</a></li>
       <li><a href="#education">education</a></li>
       <li><a href="#hobbies">hobbies</a></li>
       <li><a href="#contact">contact</a></li>
@@ -68,8 +67,8 @@
         </div>
       </div>
       <div class="hero-actions">
-        <a href="#projects" class="btn btn-primary">
-          <i class="fas fa-code"></i> View Projects
+        <a href="#experience" class="btn btn-primary">
+          <i class="fas fa-briefcase"></i> View Experience
         </a>
         <a href="mailto:imishu98@gmail.com?subject=Hello%20Ishaan!" class="btn btn-outline">
           <i class="fas fa-envelope"></i> Email Me
@@ -221,38 +220,66 @@
             </div>
             <div class="skill-chip">
               <i class="fas fa-tools"></i>
-              <span>Claude CLI Plugins</span>
+              <span>Claude Code Plugins</span>
             </div>
             <div class="skill-chip">
-              <i class="devicon-vscode-plain colored"></i>
-              <span>VS Code Extensions</span>
+              <i class="fas fa-puzzle-piece"></i>
+              <span>Low Code / No Code</span>
             </div>
           </div>
         </div>
 
-        <!-- Backend & DevOps -->
+        <!-- Concepts & Tools -->
         <div class="skill-category">
-          <h3 class="skill-cat-title"><i class="fas fa-server"></i> Backend &amp; DevOps</h3>
+          <h3 class="skill-cat-title"><i class="fas fa-server"></i> Concepts &amp; Tools</h3>
           <div class="skill-grid">
             <div class="skill-chip">
-              <i class="devicon-azure-plain colored"></i>
-              <span>Azure</span>
+              <i class="fas fa-brain"></i>
+              <span>Prompt Engineering</span>
+            </div>
+            <div class="skill-chip">
+              <i class="fas fa-network-wired"></i>
+              <span>LLM Integration</span>
+            </div>
+            <div class="skill-chip">
+              <i class="fas fa-project-diagram"></i>
+              <span>Agentic AI Orchestration</span>
+            </div>
+            <div class="skill-chip">
+              <i class="fas fa-bug"></i>
+              <span>Crash Analysis &amp; Fixes</span>
+            </div>
+            <div class="skill-chip">
+              <i class="fas fa-magic"></i>
+              <span>Copilot</span>
             </div>
             <div class="skill-chip">
               <i class="fas fa-cogs"></i>
-              <span>Power Platform</span>
+              <span>Automation</span>
             </div>
             <div class="skill-chip">
               <i class="fas fa-chart-line"></i>
               <span>Telemetry</span>
             </div>
             <div class="skill-chip">
-              <i class="fas fa-bug"></i>
+              <i class="fas fa-search"></i>
+              <span>Dump Analysis</span>
+            </div>
+            <div class="skill-chip">
+              <i class="fas fa-terminal"></i>
               <span>WinDbg</span>
             </div>
             <div class="skill-chip">
               <i class="fas fa-shield-alt"></i>
-              <span>Azure Profiler</span>
+              <span>Azure Profiler Analysis</span>
+            </div>
+            <div class="skill-chip">
+              <i class="fas fa-memory"></i>
+              <span>Cache Memory</span>
+            </div>
+            <div class="skill-chip">
+              <i class="fas fa-sync-alt"></i>
+              <span>Agile Methodology</span>
             </div>
           </div>
         </div>
@@ -282,14 +309,15 @@
               <span class="date-badge">Aug 2022 – Present</span>
             </div>
             <ul class="job-points">
-              <li>Core member of <strong>Dataverse – Agent Data Platform</strong> team (Power Apps, Power Automate, Dynamics 365); SME for Runtime Crash, Runtime Memory, Number Sequence</li>
+              <li>Core member of <strong>Dataverse – Agent Data Platform</strong> team (Power Apps, Power Automate, Dynamics 365); SME for Runtime Crash, Runtime Memory, Number Sequence etc with queue ownership for critical runtime issues</li>
               <li>Designed and implemented <strong>nZDT (Near Zero Downtime)</strong> servicing APIs, enabling seamless OS patching/upgrades and saving <strong>$300K/month</strong></li>
               <li>Built Batch AutoScaling APIs to optimize runtime resource allocation, reducing costs by <strong>$117K/month</strong></li>
               <li>Resolved <strong>90+ CodeQL security vulnerabilities</strong> and policheck issues, strengthening reliability and compliance</li>
               <li>Developed <strong>6 cross-team Claude CLI plugins &amp; VS Code extensions</strong> and 3 team-specific tools, improving developer productivity</li>
-              <li>Created Finance &amp; Operations MCP and <strong>agentic AI automations</strong> for proactive issue resolution</li>
-              <li>Windows Server 2022 crash fix for Internal Windows File Read API impacting <strong>7,600+ prod environments</strong></li>
-              <li>Reduced Crash CRI from avg <strong>11.5 to 8.2</strong> per month; Number Sequence CRI from avg <strong>9 to 4</strong> per month</li>
+              <li>Created Finance &amp; Operations MCP and <strong>agentic AI automations</strong> for proactive issue resolution, reducing manual effort while enhancing reliability and availability</li>
+              <li>Windows Server 2022 crash fix for the Internal Windows File Read API — impacting <strong>7,600+ prod environments</strong> as extended support for Windows Server 2012 and 2019 ended Oct 2023</li>
+              <li>Reduced Crash CRI (customer reported incidents) from avg <strong>11.5 to 8.2</strong> per month</li>
+              <li>Reduced Number Sequence CRI from avg <strong>9 to 4</strong> per month</li>
             </ul>
             <div class="tags">
               <span class="tag">C#</span>
@@ -316,9 +344,10 @@
               <span class="date-badge">Aug 2020 – Aug 2022</span>
             </div>
             <ul class="job-points">
-              <li>Member of <strong>JISU Cross-Connectivity Platform</strong> for Equities, Credit, and E-Trading; enabled ultra-low latency (<strong>90–110 ms</strong>) order execution</li>
-              <li>Automated conversion of customer spec docs to FIX protocol configs using Python, saving <strong>30–50 hours/month</strong></li>
+              <li>Member of <strong>JISU Cross-Connectivity Platform</strong> for Equities, Credit, and E-Trading; enabled ultra-low latency (<strong>90–110 ms</strong>) order execution by integrating with internal OMS and Smart Order Router</li>
+              <li>Automated conversion of customer spec docs to FIX protocol configs using Python, eliminating manual intervention and saving <strong>30–50 hours/month</strong></li>
               <li>Owned and maintained <strong>Public Finance instances</strong> for MUNI offerings via Bloomberg, TradeWeb, and MarketAxess</li>
+              <li>Onboarded and managed direct client modules (<strong>BlackRock, Aladdin, Perform</strong>) based on custom specifications</li>
               <li>Modernized legacy codebase by upgrading <strong>27% of C code to C++</strong>, improving maintainability and performance</li>
               <li>Introduced Poker-based sprint planning to enhance Agile methodology, reducing <strong>1–3 hours per sprint</strong> per team member</li>
             </ul>
@@ -336,137 +365,12 @@
     </div>
   </section>
 
-  <!-- ─── PROJECTS ─── -->
-  <section id="projects">
-    <div class="section-inner">
-      <h2 class="section-title"><span class="accent">04.</span> Projects</h2>
-      <p class="section-subtitle">Things I've built</p>
 
-      <div class="projects-grid">
-
-        <div class="project-card featured">
-          <div class="project-img-wrap">
-            <img
-              src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=600&q=80&auto=format&fit=crop"
-              alt="Distributed Systems Project"
-              class="project-img"
-              loading="lazy"
-            />
-            <div class="project-overlay">
-              <span class="featured-badge">⭐ Featured</span>
-            </div>
-          </div>
-          <div class="project-body">
-            <h3 class="project-name">CloudScale Orchestrator</h3>
-            <p class="project-desc">
-              A distributed task orchestration engine built in Go that manages
-              microservice workflows across multi-cloud environments. Handles
-              fault tolerance, retries, and real-time monitoring at scale.
-            </p>
-            <div class="tags">
-              <span class="tag">Go</span>
-              <span class="tag">Kubernetes</span>
-              <span class="tag">gRPC</span>
-              <span class="tag">Redis</span>
-            </div>
-            <div class="project-links">
-              <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
-              <a href="#" class="project-link live"><i class="fas fa-external-link-alt"></i> Demo</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-img-wrap">
-            <img
-              src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80&auto=format&fit=crop"
-              alt="Analytics Dashboard"
-              class="project-img"
-              loading="lazy"
-            />
-          </div>
-          <div class="project-body">
-            <h3 class="project-name">DevMetrics Dashboard</h3>
-            <p class="project-desc">
-              Real-time developer productivity analytics dashboard with GitHub
-              integration, team insights, and automated reporting using
-              React + FastAPI.
-            </p>
-            <div class="tags">
-              <span class="tag">React</span>
-              <span class="tag">FastAPI</span>
-              <span class="tag">PostgreSQL</span>
-            </div>
-            <div class="project-links">
-              <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
-              <a href="#" class="project-link live"><i class="fas fa-external-link-alt"></i> Demo</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-img-wrap">
-            <img
-              src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&q=80&auto=format&fit=crop"
-              alt="AI Chat Tool"
-              class="project-img"
-              loading="lazy"
-            />
-          </div>
-          <div class="project-body">
-            <h3 class="project-name">CodeBot AI</h3>
-            <p class="project-desc">
-              An AI-powered code review assistant that integrates with GitHub
-              PRs, provides intelligent suggestions, detects bugs, and
-              auto-generates documentation using LLMs.
-            </p>
-            <div class="tags">
-              <span class="tag">Python</span>
-              <span class="tag">LLM</span>
-              <span class="tag">GitHub API</span>
-            </div>
-            <div class="project-links">
-              <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
-              <a href="#" class="project-link live"><i class="fas fa-external-link-alt"></i> Demo</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-img-wrap">
-            <img
-              src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&q=80&auto=format&fit=crop"
-              alt="IoT Platform"
-              class="project-img"
-              loading="lazy"
-            />
-          </div>
-          <div class="project-body">
-            <h3 class="project-name">IoT Data Pipeline</h3>
-            <p class="project-desc">
-              High-throughput IoT data ingestion pipeline processing
-              <strong>100k events/sec</strong> with real-time alerting,
-              built on Kafka and AWS Kinesis.
-            </p>
-            <div class="tags">
-              <span class="tag">Kafka</span>
-              <span class="tag">AWS</span>
-              <span class="tag">Python</span>
-            </div>
-            <div class="project-links">
-              <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
 
   <!-- ─── EDUCATION ─── -->
   <section id="education">
     <div class="section-inner">
-      <h2 class="section-title"><span class="accent">05.</span> Education</h2>
+      <h2 class="section-title"><span class="accent">04.</span> Education</h2>
       <div class="education-grid">
         <div class="edu-card">
           <div class="edu-icon">🎓</div>
@@ -477,9 +381,28 @@
             <p class="edu-date"><i class="fas fa-calendar-alt"></i> 2016 – 2020</p>
             <div class="edu-highlights">
               <span class="tag">CGPA: 8.3</span>
-              <span class="tag">Algorithms</span>
-              <span class="tag">OS</span>
-              <span class="tag">Distributed Systems</span>
+            </div>
+          </div>
+        </div>
+        <div class="edu-card">
+          <div class="edu-icon">📚</div>
+          <div class="edu-info">
+            <h3>Higher Secondary Education</h3>
+            <p class="edu-school"><i class="fas fa-school"></i> Aditya Convent School, Jabalpur</p>
+            <p class="edu-date"><i class="fas fa-calendar-alt"></i> 2015 – 2016</p>
+            <div class="edu-highlights">
+              <span class="tag">Board Percentage: 95.4%</span>
+            </div>
+          </div>
+        </div>
+        <div class="edu-card">
+          <div class="edu-icon">📖</div>
+          <div class="edu-info">
+            <h3>Lower Secondary Education</h3>
+            <p class="edu-school"><i class="fas fa-school"></i> St. Aloysius Sr. Sec. School, Jabalpur</p>
+            <p class="edu-date"><i class="fas fa-calendar-alt"></i> 2013 – 2014</p>
+            <div class="edu-highlights">
+              <span class="tag">CGPA: 10</span>
             </div>
           </div>
         </div>
@@ -492,14 +415,21 @@
                 <i class="fas fa-medal cert-logo" style="font-size:24px;color:#e8b923;"></i>
                 <div>
                   <strong>21 Under 21 — GirlScript</strong>
-                  <p>Recognized for extraordinary technical &amp; soft skills at GirlScript Tech Summit, Nagpur (2019)</p>
+                  <p>Recognized for extraordinary technical &amp; soft skills at GirlScript Tech Summit, Nagpur (2019). Also organized an Ideathon along with HCL Technologies at the Summit.</p>
+                </div>
+              </div>
+              <div class="cert-item">
+                <i class="fas fa-trophy cert-logo" style="font-size:24px;color:#e8b923;"></i>
+                <div>
+                  <strong>4th Prize — Version Beta Hackathon, ISTE MANIT</strong>
+                  <p>December 2017</p>
                 </div>
               </div>
               <div class="cert-item">
                 <i class="fas fa-trophy cert-logo" style="font-size:24px;color:#e8b923;"></i>
                 <div>
                   <strong>First Prize: CODEBATTLE, Codathon</strong>
-                  <p>AIR 22 (Online), First Prize (Offline Final) — Technocrats Institute, Bhopal (2018)</p>
+                  <p>National Rank 66 (Online First Round), First Prize (Offline Final Round) — Technocrats Institute of Technology, Bhopal (2018)</p>
                 </div>
               </div>
               <div class="cert-item">
@@ -519,8 +449,8 @@
   <!-- ─── RESUME ─── -->
   <section id="resume">
     <div class="section-inner resume-section">
-      <h2 class="section-title"><span class="accent">06.</span> Resume</h2>
-      <p class="section-subtitle">View my full resume or download it</p>
+      <h2 class="section-title"><span class="accent">05.</span> Resume</h2>
+      <p class="section-subtitle">My full resume at a glance</p>
 
       <div class="resume-preview-card">
         <div class="resume-preview-header">
@@ -536,17 +466,94 @@
             </a>
           </div>
         </div>
-        <div class="resume-preview-body">
-          <!-- Embedded real PDF preview -->
-          <object data="assets/resume.pdf" type="application/pdf" class="resume-pdf-embed">
-            <div class="resume-pdf-fallback">
-              <i class="fas fa-file-pdf"></i>
-              <p>PDF preview is not available in your browser.</p>
-              <a href="assets/resume.pdf" download="Ishaan_Dwivedi_Resume.pdf" class="btn btn-primary">
-                <i class="fas fa-download"></i> Download Resume
-              </a>
+        <div class="resume-preview-body resume-html-content">
+
+          <!-- Profile -->
+          <div class="resume-block">
+            <h3 class="resume-block-title"><i class="fas fa-user"></i> Profile</h3>
+            <p>Innovative Software Engineer with 5+ years of experience building scalable platforms, automation frameworks, and developer tooling. Proven track record in cloud services, low‑latency systems, AI‑driven automation, and cost optimization. Skilled at turning complex problems into elegant solutions while keeping reliability high and downtime low.</p>
+          </div>
+
+          <!-- Work Experience -->
+          <div class="resume-block">
+            <h3 class="resume-block-title"><i class="fas fa-briefcase"></i> Work Experience</h3>
+
+            <div class="resume-entry">
+              <div class="resume-entry-header">
+                <strong>Software Engineer 2</strong> — Microsoft
+                <span class="resume-entry-date">Aug 2022 – Present · Hyderabad</span>
+              </div>
+              <ul>
+                <li>Core member of Dataverse – Agent Data Platform team (Power Apps, Power Automate, Dynamics 365); SME for Runtime Crash, Runtime Memory, Number Sequence etc with queue ownership for critical runtime issues</li>
+                <li>Designed and implemented nZDT (Near Zero Downtime) servicing APIs, enabling seamless OS patching/upgrades and saving $300K/month</li>
+                <li>Built Batch AutoScaling APIs to optimize runtime resource allocation, reducing costs by $117K/month</li>
+                <li>Resolved 90+ CodeQL security vulnerabilities and policheck issues, strengthening reliability and compliance</li>
+                <li>Developed 6 cross‑team Claude CLI plugins &amp; VS Code extensions and 3 team‑specific tools, improving developer productivity</li>
+                <li>Created Finance &amp; Operations MCP and agentic AI automations for proactive issue resolution, reducing manual effort while enhancing reliability and availability</li>
+                <li>Windows Server 2022 crash fix for the Internal Windows File Read API — impacting 7,600+ prod environments as extended support for Windows Server 2012 and 2019 ended Oct 2023</li>
+                <li>Reduced Crash CRI (customer reported incidents) from avg 11.5 to 8.2 per month</li>
+                <li>Reduced Number Sequence CRI from avg 9 to 4 per month</li>
+              </ul>
             </div>
-          </object>
+
+            <div class="resume-entry">
+              <div class="resume-entry-header">
+                <strong>SEP 2 / Software Developer</strong> — JP Morgan Chase &amp; Co.
+                <span class="resume-entry-date">Aug 2020 – Aug 2022 · Bengaluru</span>
+              </div>
+              <ul>
+                <li>Member of JISU Cross‑Connectivity Platform for Equities, Credit, and E‑Trading; enabled ultra‑low latency (90–110 ms) order execution by integrating with internal OMS and Smart Order Router</li>
+                <li>Automated conversion of customer spec docs to FIX protocol configs using Python, eliminating manual intervention and saving 30–50 hours/month</li>
+                <li>Owned and maintained Public Finance instances for MUNI offerings via Bloomberg, TradeWeb, and MarketAxess</li>
+                <li>Onboarded and managed direct client modules (BlackRock, Aladdin, Perform) based on custom specifications</li>
+                <li>Modernized legacy codebase by upgrading 27% of C code to C++, improving maintainability and performance</li>
+                <li>Introduced Poker‑based sprint planning to enhance Agile methodology, reducing 1–3 hours per sprint per team member</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Technical Skills -->
+          <div class="resume-block">
+            <h3 class="resume-block-title"><i class="fas fa-code"></i> Technical Skills</h3>
+            <p><strong>Languages:</strong> C, C++, X++, C#, Python, Java</p>
+            <p><strong>Technologies:</strong> Low Code / No Code, .NET, Agentic AI, Creating Agentic flows / automation, Claude Code Plugin creation, MCP</p>
+            <p><strong>Concepts:</strong> Prompt Engineering, LLM Integration, Agentic AI Orchestration, Crash Analysis and Fixes, Copilot, Automation, Telemetry, Dump Analysis, WinDbg, Azure Profiler Analysis, Cache Memory, Agile Methodology</p>
+          </div>
+
+          <!-- Education -->
+          <div class="resume-block">
+            <h3 class="resume-block-title"><i class="fas fa-graduation-cap"></i> Education</h3>
+            <div class="resume-entry">
+              <div class="resume-entry-header">
+                <strong>Bachelor of Technology</strong> — Maulana Azad National Institute of Technology, Bhopal
+                <span class="resume-entry-date">2016 – 2020 · CGPA: 8.3</span>
+              </div>
+            </div>
+            <div class="resume-entry">
+              <div class="resume-entry-header">
+                <strong>Higher Secondary Education</strong> — Aditya Convent School, Jabalpur
+                <span class="resume-entry-date">2015 – 2016 · Board Percentage: 95.4%</span>
+              </div>
+            </div>
+            <div class="resume-entry">
+              <div class="resume-entry-header">
+                <strong>Lower Secondary Education</strong> — St. Aloysius Sr. Sec. School, Jabalpur
+                <span class="resume-entry-date">2013 – 2014 · CGPA: 10</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Awards -->
+          <div class="resume-block">
+            <h3 class="resume-block-title"><i class="fas fa-trophy"></i> Awards</h3>
+            <ul>
+              <li><strong>21 Under 21 — GirlScript (2019):</strong> Recognized for extraordinary technical &amp; soft skills at GirlScript Tech Summit, Nagpur. Also organized an Ideathon along with HCL Technologies.</li>
+              <li><strong>4th Prize — Version Beta Hackathon, ISTE MANIT (2017)</strong></li>
+              <li><strong>First Prize: CODEBATTLE, Codathon (2018):</strong> National Rank 66 (Online First Round), First Prize (Offline Final Round) — Technocrats Institute of Technology, Bhopal</li>
+              <li><strong>AIR 22 &amp; Gold Medalist — NSTSE, Unified Council (2015)</strong></li>
+            </ul>
+          </div>
+
         </div>
         <div class="resume-download-bar">
           <a href="assets/resume.pdf" download="Ishaan_Dwivedi_Resume.pdf" class="btn btn-primary resume-download-btn" id="download-link">
@@ -560,53 +567,12 @@
     </div>
   </section>
 
-  <!-- ─── LINKEDIN POSTS ─── -->
-  <section id="linkedin-posts">
-    <div class="section-inner">
-      <h2 class="section-title"><span class="accent">07.</span> Featured Posts</h2>
-      <p class="section-subtitle">Thoughts &amp; insights I share on LinkedIn</p>
 
-      <div class="posts-grid">
-        <a href="https://www.linkedin.com/in/ishaan-dwivedi/recent-activity/all/" target="_blank" class="post-card">
-          <div class="post-icon"><i class="fab fa-linkedin"></i></div>
-          <div class="post-body">
-            <h3>Agentic AI &amp; Developer Tooling</h3>
-            <p>How I built 6 cross-team Claude CLI plugins and VS Code extensions at Microsoft to supercharge developer productivity across Dataverse.</p>
-            <span class="post-link">Read on LinkedIn <i class="fas fa-external-link-alt"></i></span>
-          </div>
-        </a>
-
-        <a href="https://www.linkedin.com/in/ishaan-dwivedi/recent-activity/all/" target="_blank" class="post-card">
-          <div class="post-icon"><i class="fab fa-linkedin"></i></div>
-          <div class="post-body">
-            <h3>Saving $300K/Month with nZDT APIs</h3>
-            <p>The story behind designing Near Zero Downtime servicing APIs that enabled seamless OS patching and upgrades at scale for Dynamics 365.</p>
-            <span class="post-link">Read on LinkedIn <i class="fas fa-external-link-alt"></i></span>
-          </div>
-        </a>
-
-        <a href="https://www.linkedin.com/in/ishaan-dwivedi/recent-activity/all/" target="_blank" class="post-card">
-          <div class="post-icon"><i class="fab fa-linkedin"></i></div>
-          <div class="post-body">
-            <h3>From C to C++ — Modernizing Legacy Code</h3>
-            <p>Lessons from upgrading 27% of a legacy C codebase to C++ at JP Morgan Chase, improving maintainability and performance in production trading systems.</p>
-            <span class="post-link">Read on LinkedIn <i class="fas fa-external-link-alt"></i></span>
-          </div>
-        </a>
-      </div>
-
-      <div style="text-align:center;margin-top:2rem;">
-        <a href="https://www.linkedin.com/in/ishaan-dwivedi" target="_blank" class="btn btn-outline">
-          <i class="fab fa-linkedin"></i> View All Posts on LinkedIn
-        </a>
-      </div>
-    </div>
-  </section>
 
   <!-- ─── HOBBIES ─── -->
   <section id="hobbies">
     <div class="section-inner">
-      <h2 class="section-title"><span class="accent">08.</span> Hobbies &amp; Interests</h2>
+      <h2 class="section-title"><span class="accent">06.</span> Hobbies &amp; Interests</h2>
       <p class="section-subtitle">What I do when I'm not writing code</p>
 
       <div class="hobbies-grid">
@@ -783,7 +749,7 @@
   <!-- ─── CONTACT ─── -->
   <section id="contact">
     <div class="section-inner">
-      <h2 class="section-title"><span class="accent">09.</span> Contact</h2>
+      <h2 class="section-title"><span class="accent">07.</span> Contact</h2>
       <p class="section-subtitle">Let's build something amazing together</p>
 
       <div class="contact-grid">

@@ -238,18 +238,7 @@ document.querySelectorAll('.skill-chip').forEach(chip => {
 });
 
 
-// ── Project cards – subtle tilt on hover ───────────────────
-document.querySelectorAll('.project-card').forEach(card => {
-  card.addEventListener('mousemove', e => {
-    const rect = card.getBoundingClientRect();
-    const x = ((e.clientX - rect.left) / rect.width - 0.5) * 6;
-    const y = ((e.clientY - rect.top) / rect.height - 0.5) * -6;
-    card.style.transform = `perspective(800px) rotateY(${x}deg) rotateX(${y}deg) translateY(-4px)`;
-  });
-  card.addEventListener('mouseleave', () => {
-    card.style.transform = '';
-  });
-});
+
 
 
 // ── Smooth section reveal on load ─────────────────────────
