@@ -190,7 +190,7 @@ const sectionObserver = new IntersectionObserver(entries => {
 sections.forEach(s => sectionObserver.observe(s));
 
 
-// ── Contact form (demo) ────────────────────────────────────
+// ── Contact form – opens mailto: with form data ────────────
 const form   = document.getElementById('contact-form');
 const status = document.getElementById('form-status');
 
@@ -207,19 +207,23 @@ form.addEventListener('submit', e => {
     return;
   }
 
-  // Simulate send
-  const btn = form.querySelector('button[type="submit"]');
-  btn.disabled = true;
-  btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending…';
+  // Build mailto link with form data
+  const subject = encodeURIComponent(`Message from ${name} via Portfolio`);
+  const body    = encodeURIComponent(
+    `Hi Ishaan,\n\n${message}\n\n— ${name}\n${email}`
+  );
+  const mailtoUrl = `mailto:imishu98@gmail.com?subject=${subject}&body=${body}`;
+
+  // Open the user's email client
+  window.location.href = mailtoUrl;
+
+  status.textContent = '📧 Opening your email client…';
+  status.style.color = 'var(--accent)';
 
   setTimeout(() => {
-    btn.disabled = false;
-    btn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
-    status.textContent = '✅ Message sent! I\'ll get back to you soon.';
+    status.textContent = '✅ If your email client didn\'t open, email me directly at imishu98@gmail.com';
     status.style.color = 'var(--accent3)';
-    form.reset();
-    setTimeout(() => { status.textContent = ''; }, 5000);
-  }, 1400);
+  }, 3000);
 });
 
 
@@ -234,14 +238,18 @@ document.querySelectorAll('.skill-chip').forEach(chip => {
 });
 
 
-// ── Resume download button ─────────────────────────────────
-const dlBtn = document.getElementById('download-resume-btn');
-if (dlBtn) {
-  dlBtn.addEventListener('click', () => {
-    const link = document.getElementById('download-link');
-    if (link) link.click();
+// ── Project cards – subtle tilt on hover ───────────────────
+document.querySelectorAll('.project-card').forEach(card => {
+  card.addEventListener('mousemove', e => {
+    const rect = card.getBoundingClientRect();
+    const x = ((e.clientX - rect.left) / rect.width - 0.5) * 6;
+    const y = ((e.clientY - rect.top) / rect.height - 0.5) * -6;
+    card.style.transform = `perspective(800px) rotateY(${x}deg) rotateX(${y}deg) translateY(-4px)`;
   });
-}
+  card.addEventListener('mouseleave', () => {
+    card.style.transform = '';
+  });
+});
 
 
 // ── Smooth section reveal on load ─────────────────────────

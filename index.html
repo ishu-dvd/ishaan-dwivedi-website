@@ -10,11 +10,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <!-- Font Awesome (deferred) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" /></noscript>
 
-  <!-- Devicons (tech logos) -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
+  <!-- Devicons (deferred) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" /></noscript>
 
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -69,8 +71,11 @@
         <a href="#projects" class="btn btn-primary">
           <i class="fas fa-code"></i> View Projects
         </a>
-        <a href="#contact" class="btn btn-outline">
-          <i class="fas fa-envelope"></i> Get in Touch
+        <a href="mailto:imishu98@gmail.com?subject=Hello%20Ishaan!" class="btn btn-outline">
+          <i class="fas fa-envelope"></i> Email Me
+        </a>
+        <a href="assets/resume.pdf" download="Ishaan_Dwivedi_Resume.pdf" class="btn btn-outline">
+          <i class="fas fa-file-pdf"></i> Download Resume
         </a>
       </div>
     </div>
@@ -524,60 +529,31 @@
             <span class="dot yellow"></span>
             <span class="dot green"></span>
           </div>
-          <span class="resume-preview-title">resume.pdf</span>
+          <span class="resume-preview-title">Ishaan_Dwivedi_Resume.pdf</span>
           <div class="resume-preview-actions">
-            <button class="resume-icon-btn" title="Download" id="download-resume-btn">
+            <a href="assets/resume.pdf" download="Ishaan_Dwivedi_Resume.pdf" class="resume-icon-btn" title="Download">
               <i class="fas fa-download"></i>
-            </button>
+            </a>
           </div>
         </div>
         <div class="resume-preview-body">
-          <!-- Embedded resume preview -->
-          <div class="resume-mock">
-            <div class="resume-mock-header">
-              <h2>Ishaan Dwivedi</h2>
-              <p>Software Engineer II · Hyderabad, India</p>
-              <p>
-                <a href="mailto:imishu98@gmail.com"><i class="fas fa-envelope"></i> imishu98@gmail.com</a>
-                &nbsp;|&nbsp;
-                <a href="https://www.linkedin.com/in/ishaan-dwivedi" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                &nbsp;|&nbsp;
-                <a href="https://github.com/ishu-dvd" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-              </p>
+          <!-- Embedded real PDF preview -->
+          <object data="assets/resume.pdf" type="application/pdf" class="resume-pdf-embed">
+            <div class="resume-pdf-fallback">
+              <i class="fas fa-file-pdf"></i>
+              <p>PDF preview is not available in your browser.</p>
+              <a href="assets/resume.pdf" download="Ishaan_Dwivedi_Resume.pdf" class="btn btn-primary">
+                <i class="fas fa-download"></i> Download Resume
+              </a>
             </div>
-            <hr class="resume-divider" />
-            <div class="resume-mock-section">
-              <h3>🧑‍💻 Experience</h3>
-              <div class="resume-item">
-                <strong>Software Engineer 2</strong> — Microsoft
-                <span class="resume-date">Aug 2022–Present</span>
-                <p>Dataverse · nZDT APIs · Agentic AI · Claude CLI Plugins</p>
-              </div>
-              <div class="resume-item">
-                <strong>SEP 2 / Software Developer</strong> — JP Morgan Chase
-                <span class="resume-date">Aug 2020–Aug 2022</span>
-                <p>Low Latency Trading · FIX Protocol · Cross-Connectivity</p>
-              </div>
-            </div>
-            <div class="resume-mock-section">
-              <h3>🎓 Education</h3>
-              <div class="resume-item">
-                <strong>B.Tech Computer Science</strong> — MANIT, Bhopal
-                <span class="resume-date">2016–2020</span>
-                <p>CGPA: 8.3</p>
-              </div>
-            </div>
-            <div class="resume-mock-section">
-              <h3>🛠️ Skills</h3>
-              <p><strong>Languages:</strong> C, C++, X++, C#, Python, Java</p>
-              <p><strong>Technologies:</strong> .NET, Agentic AI, MCP, Claude Plugins, Power Platform</p>
-              <p><strong>Concepts:</strong> Prompt Engineering, LLM Integration, Crash Analysis, Telemetry, WinDbg</p>
-            </div>
-          </div>
+          </object>
         </div>
         <div class="resume-download-bar">
           <a href="assets/resume.pdf" download="Ishaan_Dwivedi_Resume.pdf" class="btn btn-primary resume-download-btn" id="download-link">
             <i class="fas fa-file-pdf"></i> Download Resume
+          </a>
+          <a href="mailto:imishu98@gmail.com?subject=Regarding%20your%20resume" class="btn btn-outline resume-download-btn">
+            <i class="fas fa-envelope"></i> Email Me
           </a>
         </div>
       </div>
@@ -636,7 +612,7 @@
       <div class="hobbies-grid">
 
         <!-- ── Ukulele & Singing ── -->
-        <div class="hobby-card hobby-wide">
+        <div class="hobby-card hobby-wide fade-in-up">
           <div class="hobby-header">
             <span class="hobby-emoji">🎸🎤</span>
             <h3>Ukulele &amp; Singing</h3>
@@ -726,7 +702,7 @@
         </div>
 
         <!-- ── Cricket ── -->
-        <div class="hobby-card">
+        <div class="hobby-card fade-in-up">
           <div class="hobby-header">
             <span class="hobby-emoji">🏏</span>
             <h3>Cricket</h3>
@@ -747,7 +723,7 @@
         </div>
 
         <!-- ── Chess ── -->
-        <div class="hobby-card">
+        <div class="hobby-card fade-in-up">
           <div class="hobby-header">
             <span class="hobby-emoji">♟️</span>
             <h3>Chess</h3>
@@ -769,7 +745,7 @@
         </div>
 
         <!-- ── Computer Gaming ── -->
-        <div class="hobby-card">
+        <div class="hobby-card fade-in-up">
           <div class="hobby-header">
             <span class="hobby-emoji">🎮</span>
             <h3>Computer Gaming</h3>
@@ -865,6 +841,9 @@
             <i class="fas fa-paper-plane"></i> Send Message
           </button>
           <p class="form-note" id="form-status"></p>
+          <p class="form-note form-hint">
+            <i class="fas fa-info-circle"></i> This opens your default email client to send me a message at <strong>imishu98@gmail.com</strong>
+          </p>
         </form>
       </div>
     </div>
