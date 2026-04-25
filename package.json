@@ -1,0 +1,23 @@
+{
+  "name": "ishaan-dwivedi-website",
+  "version": "1.0.0",
+  "description": "Personal portfolio website for Ishaan Dwivedi - Software Engineer II @ Microsoft",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ishu-dvd/ishaan-dwivedi-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ishu-dvd/ishaan-dwivedi-website/issues"
+  },
+  "homepage": "https://github.com/ishu-dvd/ishaan-dwivedi-website#readme",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  }
+}
